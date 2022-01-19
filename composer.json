@@ -25,7 +25,6 @@
   },
   "require": {
     "contao/core-bundle":"~4.9",
-    "guzzlehttp/guzzle": "^7.4",
     "tinify/tinify": "^1.5"
   },
   "config": {
