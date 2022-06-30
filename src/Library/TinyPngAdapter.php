@@ -45,6 +45,10 @@ class TinyPngAdapter {
             return null;
         }
 
+        if (!file_exists(TL_ROOT . '/' . $objFile->path)) {
+            return null;
+        }
+
         try {
             \Tinify\setKey($strApiKey);
             $objSource = \Tinify\fromFile(TL_ROOT . '/' . $objFile->path);
